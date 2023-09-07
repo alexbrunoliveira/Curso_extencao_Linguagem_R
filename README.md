@@ -38,6 +38,14 @@ Neste curso, exploramos uma análise de dados históricos de conflitos e guerras
   <img src="Print/Captura de tela 2023-09-07 153816.png" width="950" title="hover text">
   </p>
 
+  #### Comando que apresenta dados em gráfico de pizza 
+  ### A soma dos países permanentes e provisórios de cada país do CSONU
+  ```
+  pie(t, main="Gr?fico Etapa 6 - Poder no CSONU",labels=rotulos, col=rainbow(2), sub="Fonte: COW (2021)", cex.main=1.0, cex.sub=0.5, col.main="darkblue", radius=1.0)
+```
+<p align="center">
+  <img src="Print/Captura de tela 2023-09-07 171702.png" width="550" title="hover text">
+  </p>
 Este gráfico mostra a tendência de guerras ao longo do século XX com base em dados de várias fontes. Podemos observar um aumento significativo no número de conflitos após a Segunda Guerra Mundial, seguido por uma tendência decrescente nas décadas seguintes.
 
 ## Contribuição
