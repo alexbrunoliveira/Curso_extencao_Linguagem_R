@@ -33,7 +33,10 @@ Este repositório contém os seguintes diretórios e arquivos:
 
 Neste curso, exploramos uma análise de dados históricos de conflitos e guerras no século XX usando R. Veja um exemplo de como analisamos e visualizamos tendências:
 
-![Exemplo de Gráfico](figures/war_trend.png)
+
+<p align="center">
+  <img src="Print/Captura de tela 2023-09-07 153816.png" width="950" title="hover text">
+  </p>
 
 Este gráfico mostra a tendência de guerras ao longo do século XX com base em dados de várias fontes. Podemos observar um aumento significativo no número de conflitos após a Segunda Guerra Mundial, seguido por uma tendência decrescente nas décadas seguintes.
 
