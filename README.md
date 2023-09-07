@@ -48,6 +48,17 @@ Neste curso, exploramos uma análise de dados históricos de conflitos e guerras
   </p>
 Este gráfico mostra a tendência de guerras ao longo do século XX com base em dados de várias fontes. Podemos observar um aumento significativo no número de conflitos após a Segunda Guerra Mundial, seguido por uma tendência decrescente nas décadas seguintes.
 
+## Gráfico em linha do tipo "o" linhas e pontos
+#### Qtd de tropas enviadas pela ONU ao logo dos anos
+
+
+  ```
+  plot(ano, tropas,type = "o", col = "darkblue", xlab = "Anos", ylab = "Tropas",main = "Tropas na ONU por ano")
+```
+<p align="center">
+  <img src="Print/grafico_linha.png" width="550" title="hover text">
+  </p>
+
 ## Contribuição
 
 Se você deseja contribuir para este repositório com seus próprios exemplos de análise ou melhorias nos materiais existentes, sinta-se à vontade para abrir um pull request. Estamos abertos a colaborações!
