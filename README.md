@@ -59,6 +59,65 @@ Este gráfico mostra a tendência de guerras ao longo do século XX com base em 
   <img src="Print/grafico_linha.png" width="550" title="hover text">
   </p>
 
+  ## Gráfico de barras Horizontal
+  #### Tragetória dos vetos da ONU ao longo das décadas
+  
+
+  <p align="center">
+  <img src="Print/grafico_barras_horizontal.png" width="550" title="hover text">
+  </p>
+
+##### Codigo disponível no curso 
+```
+
+  install.packages("ggplot2")
+library(ggplot2)
+
+ggplot(vetos_CSONU, aes(fill=anos, y=pais, x=vetos)) + geom_bar(position="stack", stat="identity")+ 
+  labs(title = "Vetos das Pot?ncias no CSONU ",
+       subtitle = "Fonte: Dyson (2013)",
+       x = "N?mero de Vetos",
+       y = "Pot?ncias Poder de Veto")
+
+```
+
+
+ ##### Codigo alterado 
+```
+
+  install.packages("ggplot2")
+library(ggplot2)
+
+ggplot(vetos_CSONU, aes(fill = anos, y = pais, x = vetos)) +  geom_bar(position = "stack", stat = "identity") +
+  labs(title = "Vetos das Potências no CSONU",
+    subtitle = "Fonte: Dyson (2013)",
+    x = "Número de Vetos",
+    y = "Potências com Poder de Veto"
+  ) +
+  scale_fill_brewer(palette = "Set1")  # Define uma paleta de cores
+
+```
+
+
+  ## Gráfico de barras Vertical
+
+   <p align="center">
+  <img src="Print/grafico_barras_vertical.png" width="550" title="hover text">
+  </p>
+
+  ```
+ggplot(vetos_CSONU, aes(fill = anos, x = vetos, y = pais)) +
+  geom_bar(stat = "identity", position = "stack", width = 0.7) +
+  labs(
+    title = "Vetos das Potências no CSONU",
+    subtitle = "Fonte: Dyson (2013)",
+    x = "Número de Vetos",
+    y = "Potências Poder de Veto"
+  ) +
+  coord_flip()  # Inverte os eixos x e y para criar um gráfico de barras empilhadas horizontal
+
+  ```
+
 ## Contribuição
 
 Se você deseja contribuir para este repositório com seus próprios exemplos de análise ou melhorias nos materiais existentes, sinta-se à vontade para abrir um pull request. Estamos abertos a colaborações!
