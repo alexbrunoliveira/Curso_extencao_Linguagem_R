@@ -118,6 +118,26 @@ ggplot(vetos_CSONU, aes(fill = anos, x = vetos, y = pais)) +
 
   ```
 
+
+   ## Países com maior número de habitantes segundo Bando de dados de Economia
+
+ <p align="center">
+  <img src="Print/Mapa_mundi_por_habitante..png" width="550" title="hover text">
+  </p>
+
+
+   ```
+   econ1 <- subset(economia, select=c(country, population__millions_)) #separando paises e imposto de resda com subset# 
+world2  = map_data("world")   #invocando dados do mapa e o nome dado fo objeto foi world#
+world2 <- merge (world, econ, by.x="region", by.y="country", all.x=T, all.y=F) #objeto c nome wordl1 com merge q junta o bc com regiao, pais e imposto de renda e all.y=f para o bd nao vir com outras variaveis#
+world2 <- world[order(world1$order),] #ordenando o objeto c uso do $ crescente#
+m0 <- ggplot(data=world1) #cria plano de fundo para objeto world1#
+m1 <- m0 + geom_polygon(aes(x=long, y=lat, group=group, fill= population__millions_)) + coord_equal() #somado os poligonos com ggplot#
+m2 <- m1 + geom_path(aes(x=long, y=lat, group=group), color='grey', size=.1)
+m3 <- m2 + scale_fill_gradient(low = "#ADD8E6", high = "#900C3F")
+m3
+   ```
+
 ## Contribuição
 
 Se você deseja contribuir para este repositório com seus próprios exemplos de análise ou melhorias nos materiais existentes, sinta-se à vontade para abrir um pull request. Estamos abertos a colaborações!
