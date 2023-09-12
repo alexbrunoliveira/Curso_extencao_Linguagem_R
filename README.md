@@ -25,8 +25,6 @@ Este repositório contém os seguintes diretórios e arquivos:
 
 - `data/`: Este diretório contém os dados brutos usados nos exemplos.
 - `scripts/`: Aqui você encontrará os scripts R usados para realizar análises de dados.
-- `notebooks/`: Notebooks R Markdown com explicações passo a passo e análises detalhadas.
-- `figures/`: Gráficos e visualizações gerados a partir dos dados.
 - `README.md`: Este arquivo.
 
 ## Exemplo de Análise: Tendências de Guerras no Século XX
